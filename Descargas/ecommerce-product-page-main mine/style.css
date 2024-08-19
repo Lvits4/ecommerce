@@ -1,0 +1,357 @@
+body, html{
+    max-width: 100vw;
+    min-width: 100vw;
+    max-height: 100vh;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    color: hsl(219, 9%, 45%);
+}
+
+.cuerpo{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 80%;
+    height: 100%;
+}
+
+nav{
+    height: 9%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid hsl(210, 2%, 83%);
+    margin-bottom: 5%;
+}
+
+.nav-div{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+a{
+    margin: 0 5px;
+    text-decoration-style: none;
+    color: hsl(219, 9%, 45%);
+    padding: 2.5% 0rem;
+    width: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    
+}
+
+a:hover{
+    border-bottom: solid 5px hsl(26, 100%, 55%);
+    color: hsl(220, 13%, 13%);
+}
+
+.contenido{
+    display: flex;
+}
+
+
+.izq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.izq div{
+    width: 75%;
+    display: flex;
+}
+
+.img-principal{
+    width: 75%;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.smalls-imgs img{
+    width: 20%;
+    border-radius: 10px;
+    margin-right: 27px;
+}
+
+.smalls-imgs img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+
+.avatar-car{
+    width: 10%;
+    display: flex;
+    position: absolute;
+    right: 10%;
+    align-items: center;
+}
+
+.avatar{
+    width: 30%;
+    border: solid 2px hsl(26, 100%, 55%);
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.car{
+    width: 15%;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.der{
+    padding: 2rem;
+}
+
+.title{
+    width: 60%;
+    font-size: 2.5rem;
+}
+
+.text{
+    width: 65%;
+}
+
+.precio{
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0;
+    width: 30%;
+}
+
+.desc{
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    height: 5%;
+}
+
+.desc p{
+    margin-left: 10px;
+    background-color: black;
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.precio h1{
+    margin: 0;
+    padding: 0;
+}
+
+.precio div{
+    height: 40px;
+}
+
+.tach{
+    color: hsl(219, 9%, 45%);
+    text-decoration: line-through;
+}
+
+.buy{
+    display: flex;
+    width: 65%;
+}
+
+.buy .max-min{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+}
+
+.buy .car-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.max-min button{
+    width: 40px;
+    height: 40px;
+    background-color: hsl(223, 64%, 98%);
+    border-style: none;
+    cursor: pointer;
+}
+
+.menos{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.mas{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.number{
+    background-color: hsl(223, 64%, 98%);
+    padding: 10.5px 15px;
+    font-weight: bold;
+    color: black;
+}
+
+.add-to-car{
+    margin-left: 10px;
+    background-color: hsl(26, 100%, 55%);
+    width: 100%;
+    padding: 11px;
+    border-radius: 10px;
+    border-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.img-car-button{
+    margin-right: 10px;
+    width: 15px;
+    color: black;
+}
+
+.add-to-car:hover{
+    background-color: hsl(25, 100%, 94%);
+}
+
+.icon-menu{
+    display: none;
+}
+
+.pass{
+    display: none;
+}
+
+@media screen and (max-width: 375px)  {
+
+    .container{
+        width: 100%;
+    }
+
+    nav{
+        border-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    a{
+        display: none;
+    }
+
+    .icon-menu{
+        display: block;
+        cursor: pointer;
+        margin: 15px;
+        width: 15px;
+    }
+
+    .logo{
+        height: 35%;
+    }
+
+    .avatar-car{
+        right: 18%;
+    }
+
+    .avatar{
+        width: 60%;
+    }
+
+    .car{
+        width: 60%;
+        margin: 20px;
+    }
+
+    .contenido{
+        display: block;
+        width: 100%;
+    }
+
+    .izq{
+        width: 100%;
+    }
+
+    .img-principal{
+        width: 100vw;
+        border-radius: 0;
+        
+    }
+
+    .der{
+        width: 100%;
+        padding: 0;
+        margin: 5%;
+    }
+
+    .title{
+        width: 80%;
+        font-size: 1.8rem;
+    }
+    
+    .text{
+        width: 85%;
+    }
+
+    .precio{
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+    }
+
+    .precio h1{
+        font-size: 1.5rem;
+    }
+    
+    .tach{
+        color: hsl(219, 9%, 45%);
+        font-size: 1.1rem;
+        text-decoration: line-through;
+    }
+
+    .buy{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+
+    .buy .max-min{
+        width: 100%;
+    }
+
+    .max-min button{
+        width: 30%;
+    }
+
+    .number{
+        padding: 10.8px 5rem;
+    }
+    
+    .add-to-car{
+        margin-left: 0;
+    }
+
+    .add-to-car:hover{
+        background-color: hsl(25, 100%, 94%);
+    }
+
+    .smalls-imgs{
+        display: none;
+    }
+
+}
